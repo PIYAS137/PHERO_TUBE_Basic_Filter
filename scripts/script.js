@@ -14,7 +14,7 @@ fetch(CatagoryButtonsUrl)
         CatagoryArray.forEach(element => {
             const elem = document.createElement("button");
             elem.innerText = element.category;
-            elem.classList = ("px-5 py-1 text-lg font-base bg-gray-300 rounded-lg")
+            elem.classList = ("px-5 py-1 text-lg font-base bg-gray-300 rounded-lg activeButtonPrev")
             elem.setAttribute("id", `${element.category_id}`)
             elem.setAttribute("onclick", `getIdFunc(${element.category_id})`)
             catagoryButtonContainer.appendChild(elem)
@@ -24,7 +24,15 @@ fetch(CatagoryButtonsUrl)
 
 function getIdFunc(id) {
     InitialApiAllDataGet(id)
+
+    // activeButton
+    // -------------------- active buttton action --------------------
+    
+
+    // -------------------- active buttton action --------------------
 }
+
+
 
 
 function convertSecondsToTime(sec) {
@@ -32,7 +40,9 @@ function convertSecondsToTime(sec) {
     const remainingSeconds = sec % 3600;
     const minutes = Math.floor(remainingSeconds / 60);
 
-    return { hours: hours, minutes: minutes, }
+    // 3hrs 56 min ago
+
+    return `${hours} hrs ${minutes} min ago`
 }
 
 
@@ -64,7 +74,7 @@ const SendReadyData = (data) => {
             elem.innerHTML = `
             <div class="p-2 bg-cover bg-center bg-no-repeat h-52 rounded-xl flex justify-end items-end"
                             style="background-image: url(${one.thumbnail});">
-                            ${one.others.posted_date && `<span class="bg-zinc-700 text-white px-3 py-1 rounded-md">3hrs 56 min ago</span>`}
+                            ${one.others.posted_date && `<span class="bg-zinc-800 text-xs text-white px-3 py-1 rounded-md">${convertSecondsToTime(one.others.posted_date)}</span>`}
                         </div>
                         <div class="flex mt-5">
                             <div>
