@@ -24,12 +24,6 @@ fetch(CatagoryButtonsUrl)
 
 function getIdFunc(id) {
     InitialApiAllDataGet(id)
-
-    // activeButton
-    // -------------------- active buttton action --------------------
-    
-
-    // -------------------- active buttton action --------------------
 }
 
 
@@ -57,7 +51,7 @@ const SendReadyData = (data) => {
 
     // ------------------------- sorting function code-------------------------
     sortByViewButton.addEventListener("click", function () {
-        data = data.sort(function(a,b){
+        data = data.sort(function (a, b) {
             return parseFloat(b.others.views) - parseFloat(a.others.views)
         })
         SendReadyData(data)
@@ -67,7 +61,7 @@ const SendReadyData = (data) => {
     const CardWrapper = document.getElementById("cardWrapper");
     CardWrapper.innerHTML = ""
     if (data.length > 0) {
-        CardWrapper.classList.add("grid-cols-4");
+        CardWrapper.classList.add("grid-cols-1", "sm:grid-cols-2", "lg:grid-cols-4");
         data.forEach((one) => {
             const elem = document.createElement("div");
             elem.classList = ("bg-base-100 ");
@@ -94,10 +88,10 @@ const SendReadyData = (data) => {
             CardWrapper.appendChild(elem)
         })
     } else {
-        CardWrapper.classList.remove("grid-cols-4");
+        CardWrapper.classList.remove("grid-cols-1", "sm:grid-cols-2", "lg:grid-cols-4");
         CardWrapper.innerHTML = `<div class="container w-full flex flex-col justify-center items-center my-40">
         <img class="w-40" src="./Icon.png" alt="">
-        <h1 class="font-bold text-3xl my-5">Oops!! There is no content here</h1>
+        <h1 class="font-bold text-xl md:text-2xl lg:text-3xl my-5">Oops!! There is no content here</h1>
     </div>`
     }
 

@@ -10,19 +10,23 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="px-2 lg:px-0">
     <header class="container mx-auto flex justify-center flex-col items-center py-3 space-y-1">
-        <button class="bg-gray-400 rounded-lg hover:bg-gray-300 text-white px-5 py-2 text-lg"><a
+        <button class="bg-gray-400 rounded-lg mb-2 hover:bg-gray-300 text-white px-5 py-2 text-lg"><a
                 href="./index.html">Back To Homepage</a></button>
-        <h1 class="text-3xl py-3 font-bold">BLOG</h1>
+        <h1
+            class="text-3xl py-3 font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-full text-center text-white rounded-xl tracking-widest">
+            BLOG</h1>
     </header>
     <!-- q1 -->
     <section class="container mx-auto bg-gray-30">
-        <h1 class="text-3xl bg-blue-600 p-2 text-white  font-bold"><span class="font-bold">Q-1 )</span> Discuss the scope of
+        <h1 class="text-3xl  bg-blue-600 p-5 text-white  font-bold"><span class="font-bold">Q-1 )</span> Discuss the
+            scope of
             var, let, and const</h1>
         <div class="bg-red-200">
             <div class="flex justify-between flex-col lg:flex-row mb-6">
-                <p class="p-3 flex-1"><span class="text-3xl font-bold">Var : </span> First fo all var can access from anywhere!
+                <p class="p-3 flex-1"><span class="text-3xl font-bold">Var : </span> First fo all var can access from
+                    anywhere!
                     I can access it outside a function and also inside a function. I can reassign var. Var is best for
                     rough initialization but it can not handle the type related operations! Thats why var is use in
                     BASIC (vanilla js) but in higher level we should not use the var in big project or complex codin!
@@ -33,13 +37,25 @@
         </div>
         <div class="bg-green-200 ">
             <div class="flex justify-between flex-col lg:flex-row mb-6">
-                <p class="flex-1 p-3"><span class="text-3xl font-bold">Let : </span> Let is a very scopable type in js! let is most preferable for execution context. Because in scope control we can easily use let. for in this case here x is declare in outside the function so, now x is become global! but in the function of tempFunc(), we can access y inside the funciton because the scope of y is just the area of funciton . so we can not access y outside the funcion! So thats why let is a very useful and most used execution context in js. Also let is use for large and complex project!</p>
+                <p class="flex-1 p-3"><span class="text-3xl font-bold">Let : </span> Let is a very scopable type in js!
+                    let is most preferable for execution context. Because in scope control we can easily use let. for in
+                    this case here x is declare in outside the function so, now x is become global! but in the function
+                    of tempFunc(), we can access y inside the funciton because the scope of y is just the area of
+                    funciton . so we can not access y outside the funcion! So thats why let is a very useful and most
+                    used execution context in js. Also let is use for large and complex project!</p>
                 <img class="flex-1" src="./blogImages/let.png" alt="">
             </div>
         </div>
         <div class="bg-blue-200 ">
             <div class="flex justify-between flex-col lg:flex-row">
-                <p class="flex-1 p-3"><span class="text-3xl font-bold">Const : </span>Const is same as var. as i say. but the main advantage of and also disadvantage of const is , it cant reassignable ! I said advantage and disadvantage both because for advantage, const is easy for execution context control, type control, if we mistakely reassign a var that we dont want, const is useful in this term! const is easy for control because it is act like constant ! but the disadvantage of const is we can not reassign it. But funally const is so powerful and most used type. its have so many advantages but if you know the right use of const then you will understand its advantages and then the disadvantages of const become noting ! const  is a member of ES6 !</p>
+                <p class="flex-1 p-3"><span class="text-3xl font-bold">Const : </span>Const is same as var. as i say.
+                    but the main advantage of and also disadvantage of const is , it cant reassignable ! I said
+                    advantage and disadvantage both because for advantage, const is easy for execution context control,
+                    type control, if we mistakely reassign a var that we dont want, const is useful in this term! const
+                    is easy for control because it is act like constant ! but the disadvantage of const is we can not
+                    reassign it. But funally const is so powerful and most used type. its have so many advantages but if
+                    you know the right use of const then you will understand its advantages and then the disadvantages
+                    of const become noting ! const is a member of ES6 !</p>
                 <img class="flex-1" src="./blogImages/const.png" alt="">
             </div>
         </div>
@@ -49,18 +65,27 @@
     <!-- q2 -->
     <section class="container mx-auto">
         <div class="my-10">
-            <h1 class="text-3xl bg-blue-600 p-2 text-white  font-bold"><span>Q-2 )</span> Tell us the use cases of null and undefined</h1>
+            <h1 class="text-3xl bg-blue-600 p-5 text-white  font-bold"><span>Q-2 )</span> Tell us the use cases of null
+                and undefined</h1>
             <div>
                 <div class="bg-yellow-100">
                     <div class="flex justify-between flex-col lg:flex-row mb-6">
                         <img class="flex-1" src="./blogImages/null.png" alt="">
-                        <p class="p-3 flex-1"><span class="text-3xl font-bold">Null : </span> Null is assigned / defined value! when there is noting but i want to say it nothing then i call it null. Actually null is a type of nothing! where undefined is type of not defined yet. But here null is a defined value! In the code i say x is null. because i defined it to null. And Also we should to know that null have its own data type ! its object! its a very interestin topic for me! and null is a negative value !</p>
+                        <p class="p-3 flex-1"><span class="text-3xl font-bold">Null : </span> Null is assigned / defined
+                            value! when there is noting but i want to say it nothing then i call it null. Actually null
+                            is a type of nothing! where undefined is type of not defined yet. But here null is a defined
+                            value! In the code i say x is null. because i defined it to null. And Also we should to know
+                            that null have its own data type ! its object! its a very interestin topic for me! and null
+                            is a negative value !</p>
                     </div>
                 </div>
                 <div class="bg-indigo-100">
                     <div class="flex justify-between flex-col lg:flex-row mb-6">
-                        <img class="flex-1" src="./blogImages/undefined.png" alt="">                 
-                        <p class="p-3 flex-1"><span class="text-3xl font-bold">Undefined : </span> undefined is totally noting! i say it nothing and i also see it noting! actually when someting is not defined, not assigned, or not touch yet then it come undefined but we can hardly assign it undefined also! undefinded is a negative value !</p>
+                        <img class="flex-1" src="./blogImages/undefined.png" alt="">
+                        <p class="p-3 flex-1"><span class="text-3xl font-bold">Undefined : </span> undefined is totally
+                            noting! i say it nothing and i also see it noting! actually when someting is not defined,
+                            not assigned, or not touch yet then it come undefined but we can hardly assign it undefined
+                            also! undefinded is a negative value !</p>
                     </div>
                 </div>
             </div>
@@ -69,8 +94,43 @@
     <!-- q2 -->
 
     <!-- q3 -->
-    <section>
-
+    <section class="container mx-auto">
+        <div class="my-20">
+            <h1 class="text-3xl bg-blue-600 p-5 text-white  font-bold"><span>Q-3 )</span> What do you mean by REST API?
+            </h1>
+            <div class="bg-sky-200  mb-5 flex flex-col-reverse lg:flex-row">
+                <div class="flex-1">
+                    <img class="w-full" src="https://miro.medium.com/v2/resize:fit:700/0*PSxcvFBVaufSCuwt.png" alt="">
+                </div>
+                <div class="flex-1 p-3">
+                    <p><span class="text-3xl font-bold">REST API</span> (Representational State Transfer) is a stored
+                        data with rules of operations. REST api have a database that maintain with 4 operation. There
+                        are Create, Read, Update, Delete. In Short form Thats all are called CRUD operation!</p>
+                    <ul class="list-decimal m-10">
+                        <li class="font-bold"><span class="text-2xl">C</span> reate : <span class="text-2xl">Post
+                            </span>method</li>
+                        <li class="font-bold"><span class="text-2xl">R</span> ead : <span class="text-2xl">Get
+                            </span>method</li>
+                        <li class="font-bold"><span class="text-2xl">U</span> pdate : <span class="text-2xl">Put
+                            </span>method</li>
+                        <li class="font-bold"><span class="text-2xl">D</span> elete : <span class="text-2xl">Delete
+                            </span>method</li>
+                    </ul>
+                </div>
+            </div>
+            <article>
+                <p>Suppose a URL : <img class="my-2" src="./blogImages/url.png" alt="">
+                    here <span class="text-green-700 font-semibold">jsonplaceholdeer.typicode.com</span> is the url of
+                    website. but the portion of this web is <span class="text-green-700 font-semibold">/user</span>. So
+                    that API of the this web is stored in this portion. We can create 4 operation here, create, update,
+                    read, delete. this all are go through the body of the API. An REST API is the rested data store, (In
+                    my thinking). Here has so many data and if we want the operate with this data then we can with this
+                    4 operation! REST API is one of the most popular thing nowadays! So that so many website provide it
+                    with there complex benifits! REST or a simple API has some parts. There are HEAD, BODY, FOOT. BODY
+                    always contain the data.
+                </p>
+            </article>
+        </div>
     </section>
     <!-- q3 -->
 
