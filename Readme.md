@@ -1,6 +1,6 @@
 # PHero-tube
 
-## [ Private Repo Link](https://classroom.github.com/a/HIPmbF3j)
+## [ Live Link](https://pherotubeassignment6.netlify.app)
 
 Click here for the private repo: [https://classroom.github.com/a/HIPmbF3j](https://classroom.github.com/a/HIPmbF3j)
 
